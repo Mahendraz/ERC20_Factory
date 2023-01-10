@@ -15,13 +15,18 @@ module.exports = {
     }
   },
   networks: {
-    testnet: {
-      url: process.env.TESTNET_URL,
+    mumbai: {
+      url: process.env.MUMBAI_URL,
       accounts: [process.env.PRIVATE_KEY],
+    },
+    goerli: {
+      url: process.env.GOERLI_URL,
+      accounts: [process.env.PRIVATE_KEY],
+//      gasPrice: 20000000000, 
     },
   },
   etherscan:{
-    apiKey: process.env.API_KEY
+    apiKey: process.env.ETHERSCAN_KEY
   },
   namedAccounts: {
   deployer: {
